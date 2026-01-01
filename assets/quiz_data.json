@@ -1,0 +1,912 @@
+{
+    "part1": [
+        {
+            "question": "医薬品は、本来、人体にとっては「異物」である。",
+            "isCorrect": true,
+            "explanation": "正解！期待される有益な効果（薬効）と、好ましくない反応（副作用）の両方を生じる可能性があります。",
+            "imagePath": null
+        },
+        {
+            "question": "一般用医薬品は、医師の処方箋がなければ購入できない。",
+            "isCorrect": false,
+            "explanation": "不正解！処方箋なしで、薬局やドラッグストアで自らの判断で購入できるのが「一般用医薬品」です。",
+            "imagePath": null
+        },
+        {
+            "question": "副作用とは、医薬品を「適正に使用した」場合でも生じる有害な反応のことである。",
+            "isCorrect": true,
+            "explanation": "正解！乱用した場合だけでなく、正しく使っても体質や体調によって副作用は起こり得ます。",
+            "imagePath": null
+        },
+        {
+            "question": "世界保健機関（WHO）の定義によれば、健康とは単に病気でないというだけでなく、肉体的、精神的、社会的に満たされている状態を指す。",
+            "isCorrect": true,
+            "explanation": "正解！「健康」の定義として試験によく出ます。",
+            "imagePath": null
+        },
+        {
+            "question": "サリドマイド薬害事件は、睡眠導入剤として使われたサリドマイドにより、胎児に障害が発生した事件である。",
+            "isCorrect": true,
+            "explanation": "正解！この事件をきっかけに、医薬品の副作用報告制度などが整備されました。",
+            "imagePath": null
+        },
+        {
+            "question": "医薬品の相互作用は、飲み薬と塗り薬の間では起こらない。",
+            "isCorrect": false,
+            "explanation": "不正解！外用薬（塗り薬）や注射薬であっても、成分が血液中に吸収されれば、内服薬と相互作用を起こすことがあります。",
+            "imagePath": null
+        },
+        {
+            "question": "アルコール（お酒）は、肝臓の代謝機能に影響を与えるため、医薬品の効果を増強または減弱させることがある。",
+            "isCorrect": true,
+            "explanation": "正解！薬を飲んでいるときはお酒を控えるのが基本です。",
+            "imagePath": null
+        },
+        {
+            "question": "プラセボ効果とは、薬効成分を含まない偽薬を投与しても、心理的な暗示効果などで症状が改善する現象のことである。",
+            "isCorrect": true,
+            "explanation": "正解！「気の持ちよう」で実際に体が反応してしまうことです。逆に副作用のような症状が出ることもあります。",
+            "imagePath": null
+        },
+        {
+            "question": "小児は、大人に比べて肝臓や腎臓の機能が未発達なため、医薬品の成分が体に残りやすい。",
+            "isCorrect": true,
+            "explanation": "正解！代謝・排泄機能が弱いため、大人より副作用が強く出ることがあります。",
+            "imagePath": null
+        },
+        {
+            "question": "医薬品の臨床試験（治験）において、人間での試験の前に実施されるのは「動物実験（非臨床試験）」である。",
+            "isCorrect": true,
+            "explanation": "正解！まず動物で安全性と有効性を確認してから、人間に投与します。",
+            "imagePath": null
+        },
+        {
+            "question": "アレルギー反応は、医薬品の薬理作用（薬の効き目）と関係なく起こる。",
+            "isCorrect": true,
+            "explanation": "正解！薬の量に関係なく、体の免疫機能が過敏に反応して起こります。少量でもアナフィラキシーショックなどが起きることがあります。",
+            "imagePath": null
+        },
+        {
+            "question": "一般用医薬品の役割の一つに、「生活の質（QOL）の改善・向上」がある。",
+            "isCorrect": true,
+            "explanation": "正解！軽度な不調を自分で手当てすることで、快適な生活を維持するのも目的の一つです。",
+            "imagePath": null
+        },
+        {
+            "question": "健康食品やサプリメントは、医薬品と一緒に飲んでも相互作用は起こらない。",
+            "isCorrect": false,
+            "explanation": "絶対ダメ！ビタミン剤やハーブ（セントジョーンズワート等）も薬の効果に影響を与えることがあります。",
+            "imagePath": null
+        },
+        {
+            "question": "スモン薬害事件の原因となった整腸剤の成分は、「キノホルム」である。",
+            "isCorrect": true,
+            "explanation": "正解！整腸剤として使われましたが、神経障害を引き起こしました。",
+            "imagePath": null
+        },
+        {
+            "question": "HIV訴訟は、加熱処理されていない血液製剤によって、血友病患者がHIVに感染した事件である。",
+            "isCorrect": true,
+            "explanation": "正解！未加熱製剤の危険性が問題となりました。",
+            "imagePath": null
+        },
+        {
+            "question": "一般用医薬品には、がんや心臓病などの重篤な疾病の治療を目的とするものも含まれる。",
+            "isCorrect": false,
+            "explanation": "不正解！一般用医薬品は、あくまで「軽度な疾病」の改善や健康維持が目的です。重病は医師の治療が必要です。",
+            "imagePath": null
+        },
+        {
+            "question": "高齢者は、若年者よりも副作用が現れにくい。",
+            "isCorrect": false,
+            "explanation": "逆です！生理機能が低下しているため、薬が効きすぎたり、副作用が強く出たりしやすいです。",
+            "imagePath": null
+        },
+        {
+            "question": "医薬品のリスク評価において、50%致死量（LD50）と50%有効量（ED50）の差が小さいほど、安全性が高い。",
+            "isCorrect": false,
+            "explanation": "不正解！差が「大きい」ほど安全です。効く量と死ぬ量の差が小さい薬は、量加減が難しく危険です。",
+            "imagePath": null
+        },
+        {
+            "question": "セルフメディケーションとは、自分自身の健康に責任を持ち、軽度な身体の不調は自分で手当てすることである。",
+            "isCorrect": true,
+            "explanation": "正解！WHOによる定義です。",
+            "imagePath": null
+        },
+        {
+            "question": "CJD（クロイツフェルト・ヤコブ病）訴訟は、ヒト乾燥硬膜の移植により感染が広がった薬害事件である。",
+            "isCorrect": true,
+            "explanation": "正解！脳外科手術などで使われた輸入ヒト乾燥硬膜が原因でした。",
+            "imagePath": null
+        },
+        {
+            "question": "医薬品の販売に従事する専門家（登録販売者など）は、購入者に対して常に科学用語を使って専門的に説明すべきである。",
+            "isCorrect": false,
+            "explanation": "不正解！相手が理解できるよう、平易な言葉で分かりやすく説明する義務があります。",
+            "imagePath": null
+        },
+        {
+            "question": "副作用情報の収集において、登録販売者が副作用を知った場合は、国（厚生労働大臣）に報告する義務がある。",
+            "isCorrect": true,
+            "explanation": "正解！「医薬品・医療機器等安全性情報報告制度」により、登録販売者にも報告義務があります。",
+            "imagePath": null
+        },
+        {
+            "question": "一般用医薬品の添付文書（説明書）は、開封したらすぐに捨ててよい。",
+            "isCorrect": false,
+            "explanation": "ダメです！用法用量や副作用が書かれている重要な文書なので、使い終わるまで保管します。",
+            "imagePath": null
+        },
+        {
+            "question": "飲み薬（内服薬）を水なしで飲むと、薬が食道に張り付いて炎症を起こすことがある。",
+            "isCorrect": true,
+            "explanation": "正解！十分な水（コップ1杯程度）で飲むのが基本です。",
+            "imagePath": null
+        },
+        {
+            "question": "カプセル剤は、中身を出して服用してもよい。",
+            "isCorrect": false,
+            "explanation": "不正解！カプセルは、胃で溶けずに腸で溶けるように設計されているものなどがあるため、そのまま飲みます。",
+            "imagePath": null
+        },
+        {
+            "question": "医薬品添加物（保存料や着色料など）によって、アレルギーが起こることはない。",
+            "isCorrect": false,
+            "explanation": "不正解！添加物（黄色4号やカゼインなど）が原因でアレルギーを起こす人もいます。",
+            "imagePath": null
+        },
+        {
+            "question": "「相互作用」とは、2種類以上の医薬品を併用した際に、薬の作用が増強したり減弱したりすることである。",
+            "isCorrect": true,
+            "explanation": "正解！飲み合わせの問題です。",
+            "imagePath": null
+        },
+        {
+            "question": "小児用のシロップ剤などは、甘くて飲みやすいため、子供の手の届く場所に置いておいても安全である。",
+            "isCorrect": false,
+            "explanation": "危険です！子供がジュースと間違えて一気飲みし、急性中毒になる事故が起きています。",
+            "imagePath": null
+        },
+        {
+            "question": "医薬品の副作用で健康被害を受けた人を救済する公的な制度（医薬品副作用被害救済制度）がある。",
+            "isCorrect": true,
+            "explanation": "正解！医療費や年金などが給付される仕組みがあります。",
+            "imagePath": null
+        },
+        {
+            "question": "登録販売者は、一般用医薬品の第2類および第3類を販売することができる。",
+            "isCorrect": true,
+            "explanation": "正解！第1類（リスクが高い薬）は薬剤師しか販売できませんが、第2類・第3類は登録販売者が扱えます。",
+            "imagePath": null
+        }
+    ],
+    "part2": [
+        {
+            "question": "唾液に含まれる酵素（プチアリン）は、タンパク質を分解する働きがある。",
+            "isCorrect": false,
+            "explanation": "不正解！唾液アミラーゼ（プチアリン）が分解するのは「デンプン（炭水化物）」です。タンパク質は胃で分解されます。",
+            "imagePath": null
+        },
+        {
+            "question": "食道には消化腺がなく、消化液の分泌は行われない。",
+            "isCorrect": true,
+            "explanation": "正解！食道は単に食べ物を胃に送る通路です。",
+            "imagePath": null
+        },
+        {
+            "question": "胃酸に含まれるペプシノーゲンは、胃酸によってペプシンとなり、炭水化物を消化する。",
+            "isCorrect": false,
+            "explanation": "不正解！ペプシンが消化するのは「タンパク質」です。",
+            "imagePath": null
+        },
+        {
+            "question": "胆汁は「胆のう」で作られる。",
+            "isCorrect": false,
+            "explanation": "ひっかけ問題！胆汁を作るのは「肝臓」です。胆のうは、作られた胆汁を「濃縮・貯蔵」する場所です。",
+            "imagePath": null
+        },
+        {
+            "question": "小腸は、栄養分の吸収を行う中心的な器官であり、全長は6〜7mある。",
+            "isCorrect": true,
+            "explanation": "正解！十二指腸、空腸、回腸の3部分からなります。",
+            "imagePath": null
+        },
+        {
+            "question": "大腸では、主に水分と電解質の吸収が行われる。",
+            "isCorrect": true,
+            "explanation": "正解！大腸で水分が吸収されて便が作られます。消化はほとんど行われません。",
+            "imagePath": null
+        },
+        {
+            "question": "膵臓（すいぞう）は、血糖値を下げるインスリンと、血糖値を上げるグルカゴンの両方を分泌する。",
+            "isCorrect": true,
+            "explanation": "正解！消化液（膵液）の分泌だけでなく、血糖値調節という重要な役割もあります。",
+            "imagePath": null
+        },
+        {
+            "question": "肺自体には肺を動かすための筋肉（筋組織）がある。",
+            "isCorrect": false,
+            "explanation": "不正解！肺には筋肉がありません。横隔膜や肋間筋が動くことで呼吸を行います。",
+            "imagePath": null
+        },
+        {
+            "question": "動脈は、心臓から送り出される血液が流れる血管であり、血管壁が厚く弾力性がある。",
+            "isCorrect": true,
+            "explanation": "正解！高い圧力に耐えられる構造になっています。",
+            "imagePath": null
+        },
+        {
+            "question": "静脈には、血液の逆流を防ぐための「弁」が存在する。",
+            "isCorrect": true,
+            "explanation": "正解！血圧が低く流れが遅いため、逆流防止弁がついています（特に手足の静脈）。",
+            "imagePath": null
+        },
+        {
+            "question": "白血球は、酸素を体の各組織に運搬する働きがある。",
+            "isCorrect": false,
+            "explanation": "不正解！酸素を運ぶのは「赤血球」です。白血球は細菌やウイルスなどの異物を排除する役割です。",
+            "imagePath": null
+        },
+        {
+            "question": "腎臓の基本的な機能単位を「ネフロン」と呼ぶ。",
+            "isCorrect": true,
+            "explanation": "正解！腎小体と尿細管で構成され、血液をろ過して尿を作ります。",
+            "imagePath": null
+        },
+        {
+            "question": "副腎皮質からは、アドレナリンやノルアドレナリンが分泌される。",
+            "isCorrect": false,
+            "explanation": "不正解！アドレナリンが出るのは副腎「髄質」です。皮質からはアルドステロンなどが分泌されます。",
+            "imagePath": null
+        },
+        {
+            "question": "目の網膜にある「錐体（すいたい）細胞」は、色を識別する働きがある。",
+            "isCorrect": true,
+            "explanation": "正解！明るい場所で働き、色を感じます。暗い場所で働くのは「桿体（かんたい）細胞」です。",
+            "imagePath": null
+        },
+        {
+            "question": "耳の「蝸牛（かぎゅう）」は、平衡感覚（バランス）をつかさどる器官である。",
+            "isCorrect": false,
+            "explanation": "不正解！蝸牛は「聴覚」を担当します。平衡感覚は「前庭」や「半規管」が担当します。",
+            "imagePath": null
+        },
+        {
+            "question": "鼻腔の上部にある「嗅細胞」がにおいの刺激を感知し、脳に伝える。",
+            "isCorrect": true,
+            "explanation": "正解！においは嗅細胞で電気信号に変えられます。",
+            "imagePath": null
+        },
+        {
+            "question": "外皮系（皮膚）において、メラニン色素を産生する細胞が存在するのは「真皮」である。",
+            "isCorrect": false,
+            "explanation": "不正解！メラニン細胞があるのは「表皮」の基底層です。",
+            "imagePath": null
+        },
+        {
+            "question": "骨には、カルシウムを貯蔵する機能や、血液（赤血球など）を作り出す機能がある。",
+            "isCorrect": true,
+            "explanation": "正解！骨髄で造血が行われます。単に体を支えるだけではありません。",
+            "imagePath": null
+        },
+        {
+            "question": "交感神経が活発になると、瞳孔は収縮（縮小）する。",
+            "isCorrect": false,
+            "explanation": "逆です！交感神経（戦うモード）になると、光を多く取り入れるために瞳孔は「散大（拡大）」します。",
+            "imagePath": null
+        },
+        {
+            "question": "脳の血管には、有害物質が脳組織へ移行するのを防ぐ「血液脳関門」という仕組みがある。",
+            "isCorrect": true,
+            "explanation": "正解！これにより、多くの医薬品成分は脳に到達しにくくなっています。",
+            "imagePath": null
+        },
+        {
+            "question": "肝臓は、脂溶性のビタミン（A、Dなど）を貯蔵する働きがある。",
+            "isCorrect": true,
+            "explanation": "正解！ビタミンの貯蔵庫でもあります。",
+            "imagePath": null
+        },
+        {
+            "question": "ヘモグロビンは、鉄分を含むタンパク質で、赤血球に含まれている。",
+            "isCorrect": true,
+            "explanation": "正解！鉄分が不足するとヘモグロビンが作れず、貧血になります。",
+            "imagePath": null
+        },
+        {
+            "question": "リンパ球（B細胞、T細胞など）は、白血球の一種であり、免疫反応に関与している。",
+            "isCorrect": true,
+            "explanation": "正解！ウイルスなどに対する抗体を作ったり攻撃したりします。",
+            "imagePath": null
+        },
+        {
+            "question": "尿は、通常の状態であれば、細菌を含まない無菌の状態である。",
+            "isCorrect": true,
+            "explanation": "正解！排出されるまでは無菌です。時間が経つと雑菌が繁殖してアンモニア臭がします。",
+            "imagePath": null
+        },
+        {
+            "question": "水晶体は、近くを見る時には薄くなり、遠くを見る時には厚くなる。",
+            "isCorrect": false,
+            "explanation": "逆です！近くを見る時は「厚く」なってピントを合わせます。",
+            "imagePath": null
+        },
+        {
+            "question": "外耳道（耳の穴）にある耳垢腺からの分泌物とホコリが混ざったものが耳あかである。",
+            "isCorrect": true,
+            "explanation": "正解！耳あかには外耳道を保護する役割もあります。",
+            "imagePath": null
+        },
+        {
+            "question": "皮膚の角質層は、死んだ細胞でできており、バリア機能（皮膚の保護）を担っている。",
+            "isCorrect": true,
+            "explanation": "正解！ケラチンというタンパク質でできており、非常に丈夫です。",
+            "imagePath": null
+        },
+        {
+            "question": "平滑筋（内臓の筋肉）は、自分の意識で自由に動かすことができる「随意筋」である。",
+            "isCorrect": false,
+            "explanation": "不正解！内臓や血管の筋肉は、自律神経によって制御される「不随意筋」です。意識して止めたり動かしたりできません。",
+            "imagePath": null
+        },
+        {
+            "question": "副交感神経が優位になると、胃腸の働きは活発になる。",
+            "isCorrect": true,
+            "explanation": "正解！リラックスしている時（休息時）に消化吸収が進みます。",
+            "imagePath": null
+        },
+        {
+            "question": "心臓の内部は、上部の心室と下部の心房に分かれている。",
+            "isCorrect": false,
+            "explanation": "逆です！上部が「心房」、下部が「心室」です（部屋の下に室があるイメージ）。",
+            "imagePath": null
+        }
+    ],
+    "part3": [
+        {
+            "question": "風邪薬（かぜ薬）は、ウイルスの増殖を抑えて、風邪を根本的に治すものである。",
+            "isCorrect": false,
+            "explanation": "不正解！かぜ薬はあくまで「諸症状の緩和」が目的であり、ウイルスを退治するものではありません。",
+            "imagePath": null
+        },
+        {
+            "question": "アセトアミノフェンは、抗炎症作用はほとんど期待できないが、解熱・鎮痛作用がある。",
+            "isCorrect": true,
+            "explanation": "正解！胃への負担が少なく、小児用の解熱鎮痛薬としてもよく使われます。",
+            "imagePath": null
+        },
+        {
+            "question": "アスピリン（アセチルサリチル酸）は、ライ症候群の発生リスクがあるため、15歳未満の小児には使用してはならない。",
+            "isCorrect": true,
+            "explanation": "正解！サリチル酸系は小児（特に水痘やインフルエンザにかかっている時）には禁忌です。",
+            "imagePath": null
+        },
+        {
+            "question": "クロルフェニラミンマレイン酸塩は、くしゃみや鼻水を抑える「抗ヒスタミン成分」である。",
+            "isCorrect": true,
+            "explanation": "正解！ただし副作用として「眠気」が出やすい成分です。",
+            "imagePath": null
+        },
+        {
+            "question": "コデインリン酸塩は、延髄の咳嗽中枢に作用して咳を止めるが、便秘の副作用がある。",
+            "isCorrect": true,
+            "explanation": "正解！麻薬性鎮咳成分であり、依存性や便秘に注意が必要です。12歳未満は使用禁止です。",
+            "imagePath": null
+        },
+        {
+            "question": "去痰成分である「グアイフェネシン」は、痰の切れを良くする働きがある。",
+            "isCorrect": true,
+            "explanation": "正解！気道粘膜からの分泌を促進して、痰を薄くします。",
+            "imagePath": null
+        },
+        {
+            "question": "カフェインは、中枢神経を興奮させる作用があり、眠気防止薬の主成分として使われる。",
+            "isCorrect": true,
+            "explanation": "正解！ただし胃酸の分泌を増やすので、胃潰瘍の人は注意が必要です。",
+            "imagePath": null
+        },
+        {
+            "question": "乗り物酔い防止薬に含まれる「スコポラミン」は、長時間作用するのが特徴である。",
+            "isCorrect": false,
+            "explanation": "不正解！スコポラミンは「作用の持続時間が短い」ため、乗る直前などの服用が適しています。",
+            "imagePath": null
+        },
+        {
+            "question": "メチルエフェドリン塩酸塩は、気管支を拡張させて呼吸を楽にする成分である。",
+            "isCorrect": true,
+            "explanation": "正解！アドレナリン作動成分です。心臓病や高血圧の人は相談が必要です。",
+            "imagePath": null
+        },
+        {
+            "question": "胃酸を中和する「制酸成分」として、炭酸水素ナトリウム（重曹）が使われる。",
+            "isCorrect": true,
+            "explanation": "正解！即効性はありますが、持続時間は短いです。",
+            "imagePath": null
+        },
+        {
+            "question": "ロペラミド塩酸塩は、腸の運動を抑える強力な止瀉薬（下痢止め）であり、食あたりや水あたりによる下痢に適している。",
+            "isCorrect": false,
+            "explanation": "不正解！食中毒（食あたり）の場合、無理に下痢を止めると毒素が体内に留まるため、ロペラミドは避けるべきです。",
+            "imagePath": null
+        },
+        {
+            "question": "センノシドは、大腸を刺激して排便を促す「刺激性瀉下薬（便秘薬）」である。",
+            "isCorrect": true,
+            "explanation": "正解！植物由来の成分で、腸を刺激します。妊婦は流産のリスクがあるため注意が必要です。",
+            "imagePath": null
+        },
+        {
+            "question": "グリチルリチン酸二カリウムは、抗炎症作用があり、のどの痛みや胃の炎症を抑える目的で配合される。",
+            "isCorrect": true,
+            "explanation": "正解！ただし大量摂取すると「偽アルドステロン症」という副作用のリスクがあります。",
+            "imagePath": null
+        },
+        {
+            "question": "イブプロフェンは、解熱鎮痛成分であり、プロスタグランジンの産生を抑制する。",
+            "isCorrect": true,
+            "explanation": "正解！アスピリン同様、胃腸障害の副作用が出ることがあります。",
+            "imagePath": null
+        },
+        {
+            "question": "ジフェンヒドラミン塩酸塩は、抗ヒスタミン成分であり、睡眠改善薬としても利用される。",
+            "isCorrect": true,
+            "explanation": "正解！副作用の「眠気」を逆利用して、睡眠改善薬として販売されています。",
+            "imagePath": null
+        },
+        {
+            "question": "点眼薬において、血管収縮成分（テトラヒドロゾリンなど）は、目の充血を除去する効果がある。",
+            "isCorrect": true,
+            "explanation": "正解！血管を収縮させて赤みを取りますが、連用すると逆に充血しやすくなることがあります。",
+            "imagePath": null
+        },
+        {
+            "question": "外皮用薬（塗り薬）の「ステロイド成分」は、化膿している患部（細菌感染）にも積極的に使用すべきである。",
+            "isCorrect": false,
+            "explanation": "危険です！ステロイドは免疫を抑えるため、化膿している場所（細菌・ウイルス感染）に使うと症状が悪化します。",
+            "imagePath": null
+        },
+        {
+            "question": "ビタミンB1（チアミン）は、目の疲れや神経痛の緩和に効果がある。",
+            "isCorrect": true,
+            "explanation": "正解！炭水化物の代謝に関わり、神経の働きを助けます。",
+            "imagePath": null
+        },
+        {
+            "question": "鉄製剤（貧血の薬）を服用する前後30分は、タンニンを含むお茶（緑茶・紅茶）を飲んではならない。",
+            "isCorrect": false,
+            "explanation": "現在は「気にしなくてよい」とされています。かつては鉄の吸収を妨げると言われていましたが、最近の手引きでは制限がなくなりました。",
+            "imagePath": null
+        },
+        {
+            "question": "浣腸薬を使用した直後に排便を我慢すると、効果が弱まるため、すぐに排便すべきである。",
+            "isCorrect": false,
+            "explanation": "不正解！直後はしばらく我慢しないと、薬液だけが出てしまって効果が得られません。",
+            "imagePath": null
+        },
+        {
+            "question": "漢方薬の「葛根湯（かっこんとう）」は、風邪のひき始めで、汗をかいていない時期に適している。",
+            "isCorrect": true,
+            "explanation": "正解！体を温める作用があります。逆に汗をダラダラかいている時や、体力が弱っている人には向きません。",
+            "imagePath": null
+        },
+        {
+            "question": "抗真菌成分（みずむし薬）は、症状がなくなったらすぐに使用を中止すべきである。",
+            "isCorrect": false,
+            "explanation": "不正解！菌は皮膚の奥に残っているため、症状が消えても最低1ヶ月は塗り続ける必要があります。",
+            "imagePath": null
+        },
+        {
+            "question": "トラネキサム酸は、炎症や出血を抑える作用があり、のど風邪薬や歯磨き粉などに配合される。",
+            "isCorrect": true,
+            "explanation": "正解！プラスミンの産生を抑制します。血栓のある人は注意が必要です。",
+            "imagePath": null
+        },
+        {
+            "question": "インドメタシンは、筋肉痛などに使われる成分で、皮膚から吸収されて強い鎮痛消炎効果を示す。",
+            "isCorrect": true,
+            "explanation": "正解！湿布や塗り薬によく使われます。ぜんそくを起こしたことがある人は使用を避けます（インドメタシン喘息）。",
+            "imagePath": null
+        },
+        {
+            "question": "ビタミンAは、夜間の視力を維持するのを助ける栄養素であり、不足すると夜盲症（鳥目）になる。",
+            "isCorrect": true,
+            "explanation": "正解！目の乾燥感の緩和にも使われます。",
+            "imagePath": null
+        },
+        {
+            "question": "消毒薬の「エタノール」は、刺激性が強いため、傷口（粘膜や創傷部位）への使用は避ける。",
+            "isCorrect": true,
+            "explanation": "正解！しみて痛いです。傷口には刺激の少ない消毒薬を使います。",
+            "imagePath": null
+        },
+        {
+            "question": "ピレンゼピン塩酸塩は、胃酸の分泌を抑える成分で、消化管の運動にはほとんど影響を与えない。",
+            "isCorrect": false,
+            "explanation": "不正解！抗コリン作用があるため、胃酸は抑えますが、副作用として「口の渇き」や「排尿困難」などが起こることがあります。",
+            "imagePath": null
+        },
+        {
+            "question": "殺虫剤の成分「ピレスロイド系」は、哺乳類（人間や犬猫）に対して毒性が高い。",
+            "isCorrect": false,
+            "explanation": "不正解！ピレスロイドは昆虫には強い毒性を持ちますが、人間などの温血動物には分解酵素があるため比較的安全です。",
+            "imagePath": null
+        },
+        {
+            "question": "滋養強壮薬などに含まれる「コンドロイチン硫酸」は、関節痛や軟骨組織の成分として知られる。",
+            "isCorrect": true,
+            "explanation": "正解！細胞間の保水性を高める働きがあります。",
+            "imagePath": null
+        },
+        {
+            "question": "高コレステロール改善薬の成分には、大豆油不けん化物（ソイステロール）などが用いられる。",
+            "isCorrect": true,
+            "explanation": "正解！腸管でのコレステロール吸収を抑える働きがあります。",
+            "imagePath": null
+        }
+    ],
+    "part4": [
+        {
+            "question": "登録販売者は、第1類医薬品を販売することができる。",
+            "isCorrect": false,
+            "explanation": "不正解！第1類医薬品を販売できるのは「薬剤師」だけです。登録販売者は第2類・第3類のみ扱えます。",
+            "imagePath": null
+        },
+        {
+            "question": "一般用医薬品のリスク区分（第1類・第2類・第3類）は、外箱や容器に記載しなければならない。",
+            "isCorrect": true,
+            "explanation": "正解！購入者がリスクを識別できるように、目立つ枠内に記載する義務があります。",
+            "imagePath": null
+        },
+        {
+            "question": "第2類医薬品を販売する際、購入者から相談がなくても、必ず情報提供を行わなければならない（義務である）。",
+            "isCorrect": false,
+            "explanation": "不正解！第2類は「努力義務」です（聞かれたら答える義務はあるが、聞かれなければ必須ではない）。第1類は「義務」です。",
+            "imagePath": null
+        },
+        {
+            "question": "指定第2類医薬品は、情報提供を行うための設備（カウンターなど）から7メートル以内の範囲に陳列しなければならない。",
+            "isCorrect": true,
+            "explanation": "正解！専門家がすぐに声をかけられる場所に置く必要があります。",
+            "imagePath": null
+        },
+        {
+            "question": "医薬品を販売する店舗において、管理者（店長など）になれるのは薬剤師だけである。",
+            "isCorrect": false,
+            "explanation": "不正解！第1類を扱わない店舗であれば、実務経験等の要件を満たした「登録販売者」も店舗管理者になれます。",
+            "imagePath": null
+        },
+        {
+            "question": "医薬品の「配置販売業（置き薬）」では、医薬品を開封して分割販売（量り売り）することができる。",
+            "isCorrect": false,
+            "explanation": "不正解！配置販売業では分割販売は禁止されています。分割販売ができるのは「薬局」と「店舗販売業」です。",
+            "imagePath": null
+        },
+        {
+            "question": "登録販売者試験に合格しただけでは、登録販売者として業務を行うことはできず、都道府県知事の「販売従事登録」を受ける必要がある。",
+            "isCorrect": true,
+            "explanation": "正解！合格証を持っていても、登録証が交付されるまではただの人です。",
+            "imagePath": null
+        },
+        {
+            "question": "薬局や店舗販売業の許可は、6年ごとに更新を受けなければ効力を失う。",
+            "isCorrect": true,
+            "explanation": "正解！一度取れば一生有効ではありません。6年ごとの更新が必要です。",
+            "imagePath": null
+        },
+        {
+            "question": "要指導医薬品は、インターネット（特定販売）で販売することができる。",
+            "isCorrect": false,
+            "explanation": "絶対ダメ！要指導医薬品は「対面」での販売が義務付けられています。ネット販売は禁止です。",
+            "imagePath": null
+        },
+        {
+            "question": "第3類医薬品は、購入者から相談がなくても情報提供を行う法的義務はない。",
+            "isCorrect": true,
+            "explanation": "正解！第3類はリスクが低いため、情報提供は義務でも努力義務でもありません（聞かれたら答える必要はあります）。",
+            "imagePath": null
+        },
+        {
+            "question": "医薬品の直接の容器（ビンや箱）には、「製造番号」や「製造記号」を記載する必要がある。",
+            "isCorrect": true,
+            "explanation": "正解！ロット番号のことです。不良品回収などの際に特定するために必須です。",
+            "imagePath": null
+        },
+        {
+            "question": "薬局の開設許可があれば、処方箋に基づく調剤だけでなく、一般用医薬品の販売も行うことができる。",
+            "isCorrect": true,
+            "explanation": "正解！薬局は最強の許可なので、調剤もOTC販売も両方できます。",
+            "imagePath": null
+        },
+        {
+            "question": "化粧品は、医薬品と同様に「効能・効果」を具体的に標榜（アピール）することができる。",
+            "isCorrect": false,
+            "explanation": "不正解！化粧品は「肌を健やかに保つ」程度しか言えません。「シミが消える」「育毛」などは言えません（医薬部外品なら一部OK）。",
+            "imagePath": null
+        },
+        {
+            "question": "登録販売者が店舗の管理者になるためには、直近5年以内に2年以上の実務経験が必要である。",
+            "isCorrect": true,
+            "explanation": "正解！試験に受かったばかりの研修中の人は管理者になれません。",
+            "imagePath": null
+        },
+        {
+            "question": "医薬部外品（薬用ソープや栄養ドリンクなど）は、薬局やドラッグストア以外（コンビニなど）でも販売できる。",
+            "isCorrect": true,
+            "explanation": "正解！医薬品ではないので、許可のない一般小売店でも販売可能です。",
+            "imagePath": null
+        },
+        {
+            "question": "店舗販売業において、薬剤師が不在の時間帯でも、登録販売者がいれば第1類医薬品を販売できる。",
+            "isCorrect": false,
+            "explanation": "不正解！薬剤師がいない時間は、第1類医薬品売り場を閉鎖しなければなりません。",
+            "imagePath": null
+        },
+        {
+            "question": "濫用のおそれのある医薬品（コデインやエフェドリンなど）を販売する場合、原則として1人1個までとするなどの制限がある。",
+            "isCorrect": true,
+            "explanation": "正解！大量購入を防ぐため、数量制限や年齢確認、使用目的の確認が義務付けられています。",
+            "imagePath": null
+        },
+        {
+            "question": "特定販売（ネット販売）を行う場合でも、実店舗（実際の店）を持っている必要がある。",
+            "isCorrect": true,
+            "explanation": "正解！ネットだけの「バーチャル薬局」は認められていません。",
+            "imagePath": null
+        },
+        {
+            "question": "医薬品の陳列において、第1類、第2類、第3類を区別せずに混ぜて陳列してもよい。",
+            "isCorrect": false,
+            "explanation": "不正解！リスク区分ごとに分けて（混在しないように）陳列しなければなりません。",
+            "imagePath": null
+        },
+        {
+            "question": "「健康食品」という法的な定義は存在しない。",
+            "isCorrect": true,
+            "explanation": "正解！法律上は単なる「食品」です。医薬品のような効果効能をうたうと薬機法違反になります。",
+            "imagePath": null
+        },
+        {
+            "question": "登録販売者は、名札（ネームプレート）を着用し、登録販売者であることを明示しなければならない。",
+            "isCorrect": true,
+            "explanation": "正解！客が「誰が専門家か」分かるようにする必要があります。",
+            "imagePath": null
+        },
+        {
+            "question": "医薬品の副作用で入院治療が必要な程度の健康被害が生じた場合、その医薬品が適正に使用されていれば救済給付の対象となる。",
+            "isCorrect": true,
+            "explanation": "正解！副作用被害救済制度の対象です。",
+            "imagePath": null
+        },
+        {
+            "question": "特定保健用食品（トクホ）は、消費者庁長官の許可マークがついている。",
+            "isCorrect": true,
+            "explanation": "正解！人間マークのあれです。効果の科学的根拠が審査されています。",
+            "imagePath": null
+        },
+        {
+            "question": "機能性表示食品は、国の個別の許可を受けたものではなく、事業者の責任において科学的根拠を表示したものである。",
+            "isCorrect": true,
+            "explanation": "正解！トクホと違って国の審査はなく、届出制です。",
+            "imagePath": null
+        },
+        {
+            "question": "毒薬や劇薬は、一般用医薬品として販売されることはない。",
+            "isCorrect": false,
+            "explanation": "不正解！ごく一部ですが、劇薬指定の一般用医薬品も存在します（例：一部の殺虫剤や発毛剤など）。毒薬はありません。",
+            "imagePath": null
+        },
+        {
+            "question": "生物由来製品（プラセンタなど）の表示には、「生」という文字を白枠に黒字で記載する。",
+            "isCorrect": true,
+            "explanation": "正解！「白地に黒枠、黒字」で「生」と書かれています。",
+            "imagePath": null
+        },
+        {
+            "question": "医薬品の広告において、使用前・使用後の写真（ビフォーアフター）を使って効果を保証する表現は禁止されている。",
+            "isCorrect": true,
+            "explanation": "正解！「こんなに痩せました！」みたいな写真は、効果の保証とみなされNGです。",
+            "imagePath": null
+        },
+        {
+            "question": "配置販売業（置き薬）の販売員は、購入者が代金を支払う前であっても、医薬品を渡すことができる。",
+            "isCorrect": true,
+            "explanation": "正解！「先用後利（先に使って後で払う）」が配置販売の基本ルールです。",
+            "imagePath": null
+        },
+        {
+            "question": "登録販売者が、別の都道府県に引っ越した場合、販売従事登録をやり直す（試験を受け直す）必要がある。",
+            "isCorrect": false,
+            "explanation": "不正解！試験合格は一生有効です。登録事項の変更（登録販売者名簿の書き換え）手続きをすればOKです。",
+            "imagePath": null
+        },
+        {
+            "question": "薬機法の目的には、「保健衛生の向上」が含まれる。",
+            "isCorrect": true,
+            "explanation": "正解！医薬品等の品質、有効性、安全性を確保し、保健衛生の向上を図るのが目的です。",
+            "imagePath": null
+        }
+    ],
+    "part5": [
+        {
+            "question": "添付文書の「してはいけないこと」の項目には、守らないと症状が悪化したり、副作用が起こりやすくなる事項が記載されている。",
+            "isCorrect": true,
+            "explanation": "正解！ここには「禁止事項」が書かれています。必ず確認する必要があります。",
+            "imagePath": null
+        },
+        {
+            "question": "アレルギー症状を起こしたことがある人は、その成分を含む医薬品を使用しても問題ない。",
+            "isCorrect": false,
+            "explanation": "絶対ダメ！アナフィラキシーなどの重篤な反応を起こす危険があるため、使用は禁忌（してはいけないこと）です。",
+            "imagePath": null
+        },
+        {
+            "question": "「服用後、乗物又は機械類の運転操作をしないこと」と記載されている薬は、眠気や目のかすみ等の副作用が出る可能性がある。",
+            "isCorrect": true,
+            "explanation": "正解！抗ヒスタミン成分やコデインなどが含まれる薬が該当します。",
+            "imagePath": null
+        },
+        {
+            "question": "喘息を起こしたことがある人は、インドメタシンなどの解熱鎮痛成分を使用する際に注意が必要である。",
+            "isCorrect": true,
+            "explanation": "正解！「アスピリン喘息」を誘発する恐れがあるため、「してはいけないこと」に含まれる場合があります。",
+            "imagePath": null
+        },
+        {
+            "question": "ステロイド成分を含む外用薬は、長期間連用しても副作用の心配はない。",
+            "isCorrect": false,
+            "explanation": "不正解！長期連用すると皮膚が薄くなるなどの副作用が出るため、「長期連用しないこと」とされています。",
+            "imagePath": null
+        },
+        {
+            "question": "医薬品副作用被害救済制度は、医薬品を適正に使用したにもかかわらず発生した副作用による健康被害を救済する制度である。",
+            "isCorrect": true,
+            "explanation": "正解！入院が必要な程度の疾病や障害、死亡などが対象です。",
+            "imagePath": null
+        },
+        {
+            "question": "個人輸入した医薬品で副作用が起きた場合でも、医薬品副作用被害救済制度の対象となる。",
+            "isCorrect": false,
+            "explanation": "不正解！対象外です。正規に国内で販売された医薬品のみが対象となります。",
+            "imagePath": null
+        },
+        {
+            "question": "副作用被害救済制度の給付請求は、医薬品医療機器総合機構（PMDA）に対して行う。",
+            "isCorrect": true,
+            "explanation": "正解！製薬会社や国ではなく、PMDAが窓口です。",
+            "imagePath": null
+        },
+        {
+            "question": "登録販売者は、購入者から副作用の報告を受けた場合、必要に応じて報告書を国（厚生労働大臣）に提出する義務がある。",
+            "isCorrect": true,
+            "explanation": "正解！「医薬品・医療機器等安全性情報報告制度」に基づき、専門家として報告を行います。",
+            "imagePath": null
+        },
+        {
+            "question": "医薬品の添付文書は、一度読めば捨ててしまってよい。",
+            "isCorrect": false,
+            "explanation": "不正解！いつでも確認できるよう、薬を使い終わるまで保管しなければなりません。",
+            "imagePath": null
+        },
+        {
+            "question": "「相談すること」の項目には、医師や薬剤師、登録販売者に相談すべき場合（基礎疾患がある人や妊婦など）が記載されている。",
+            "isCorrect": true,
+            "explanation": "正解！購入者の体質や状況によっては、使用が適さない場合があるためです。",
+            "imagePath": null
+        },
+        {
+            "question": "緊急安全性情報（イエローレター）は、緊急かつ重大な注意喚起が必要な場合に発出される。",
+            "isCorrect": true,
+            "explanation": "正解！A4サイズの黄色い紙で配布されます。それより緊急度が低いのが「安全性速報（ブルーレター）」です。",
+            "imagePath": null
+        },
+        {
+            "question": "一般用医薬品の副作用報告期限は、副作用を知ってから「30日以内」と決められている。",
+            "isCorrect": false,
+            "explanation": "不正解！期限は特に定められていませんが、「速やかに」報告することとされています。",
+            "imagePath": null
+        },
+        {
+            "question": "小児（15歳未満）が水痘（水ぼうそう）にかかっている時は、アスピリンを使用してはならない。",
+            "isCorrect": true,
+            "explanation": "正解！ライ症候群という重篤な脳症を起こすリスクが高まるためです。",
+            "imagePath": null
+        },
+        {
+            "question": "カフェインが含まれる薬を服用している時は、コーヒーやお茶を多量に飲まないように注意する。",
+            "isCorrect": true,
+            "explanation": "正解！カフェインの過剰摂取になり、不眠や動悸が起こる可能性があります。",
+            "imagePath": null
+        },
+        {
+            "question": "「プラスチック製品を溶かす」等の保管上の注意は、添付文書には記載されない。",
+            "isCorrect": false,
+            "explanation": "不正解！保管・取扱い上の注意として記載されます（虫除けスプレーや液体絆創膏など）。",
+            "imagePath": null
+        },
+        {
+            "question": "グリチルリチン酸を含む医薬品は、高血圧や心臓病の人は使用前に相談が必要である。",
+            "isCorrect": true,
+            "explanation": "正解！「偽アルドステロン症」により血圧が上昇する恐れがあるためです。",
+            "imagePath": null
+        },
+        {
+            "question": "副作用被害救済制度の財源は、主に国からの税金で賄われている。",
+            "isCorrect": false,
+            "explanation": "不正解！製薬会社からの拠出金（副作用拠出金）が主な財源です。",
+            "imagePath": null
+        },
+        {
+            "question": "製品交換の申し出があった場合、登録販売者は副作用の可能性も考慮して対応する。",
+            "isCorrect": true,
+            "explanation": "正解！単なる不良品ではなく、体に合わなかった（副作用）の可能性がないか確認します。",
+            "imagePath": null
+        },
+        {
+            "question": "「使用期限」とは、未開封の状態で適切に保管された場合に品質が保持される期限のことである。",
+            "isCorrect": true,
+            "explanation": "正解！開封後は使用期限内であっても早めに使い切る必要があります。",
+            "imagePath": null
+        },
+        {
+            "question": "スティーブンス・ジョンソン症候群（SJS）は、皮膚粘膜眼症候群とも呼ばれ、重篤な皮膚障害である。",
+            "isCorrect": true,
+            "explanation": "正解！高熱とともに、全身の皮膚や粘膜に発疹・水疱が現れます。",
+            "imagePath": null
+        },
+        {
+            "question": "医薬品PLセンターは、医薬品の副作用による健康被害の救済給付を行う機関である。",
+            "isCorrect": false,
+            "explanation": "不正解！PLセンターは、製薬会社と消費者の間の「苦情やトラブルの相談・あっせん（仲裁）」を行う機関です。金銭給付はPMDAです。",
+            "imagePath": null
+        },
+        {
+            "question": "乳児（1歳未満）には、いかなる場合も一般用医薬品を使用してはならない。",
+            "isCorrect": false,
+            "explanation": "不正解！基本は受診優先ですが、医師の診療を受けられない場合などに限り、使用できるものもあります。",
+            "imagePath": null
+        },
+        {
+            "question": "アルコールと睡眠薬を併用すると、作用が増強され、記憶障害や呼吸抑制などの危険がある。",
+            "isCorrect": true,
+            "explanation": "正解！絶対にお酒と一緒に飲んではいけません。",
+            "imagePath": null
+        },
+        {
+            "question": "妊婦や妊娠していると思われる人は、便秘薬（ヒマシ油やセンノシドなど）の使用に注意が必要である。",
+            "isCorrect": true,
+            "explanation": "正解！腸の収縮を促すため、流産や早産を誘発する恐れがあるからです。",
+            "imagePath": null
+        },
+        {
+            "question": "一般用検査薬（妊娠検査薬など）の結果が陰性であれば、体調不良が続いていても受診する必要はない。",
+            "isCorrect": false,
+            "explanation": "不正解！検査結果はあくまで目安です。症状が続くなら受診が必要です。",
+            "imagePath": null
+        },
+        {
+            "question": "「保管及び取扱い上の注意」において、シロップ剤は変質しやすいため、冷凍庫で保管するのがよい。",
+            "isCorrect": false,
+            "explanation": "不正解！凍らせると成分が分離・変質することがあります。冷蔵庫や冷暗所が適切です。",
+            "imagePath": null
+        },
+        {
+            "question": "副作用被害救済制度には、「障害年金」や「遺族年金」などの給付がある。",
+            "isCorrect": true,
+            "explanation": "正解！重い後遺症が残ったり、死亡した場合も給付対象です。",
+            "imagePath": null
+        },
+        {
+            "question": "企業からの副作用報告には、15日以内に報告しなければならないものと、30日以内のものがある。",
+            "isCorrect": true,
+            "explanation": "正解！登録販売者の報告には期限がありませんが、企業からの報告には厳しい期限があります。",
+            "imagePath": null
+        },
+        {
+            "question": "ロペラミド塩酸塩（下痢止め）は、15歳未満の小児にも使用できる。",
+            "isCorrect": false,
+            "explanation": "不正解！中枢神経系への副作用が強いため、15歳未満は使用禁止（してはいけないこと）です。",
+            "imagePath": null
+        }
+    ]
+}
