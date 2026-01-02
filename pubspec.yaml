@@ -1,5 +1,5 @@
 name: otsu4_swipe
-description: "Registered Sales Designee Exam Preparation"
+description: "登録販売者試験対策 - スキマ時間で一問一答"
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -39,6 +39,7 @@ dependencies:
   shimmer: ^3.0.0
   google_mobile_ads: ^5.2.0
   google_fonts: ^6.3.3
+  app_tracking_transparency: ^2.0.6+1
 
 dev_dependencies:
   flutter_test:

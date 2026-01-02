@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:shimmer/shimmer.dart';
 import 'package:appinio_swiper/appinio_swiper.dart';
+import 'package:app_tracking_transparency/app_tracking_transparency.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:convert';
 import 'widgets/ad_banner.dart';
@@ -11,6 +12,11 @@ import 'package:google_fonts/google_fonts.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
+  // ATT対応: IDFAの取得許可リクエスト (iOSのみ有効、他は即座にstatusが返る)
+  // 広告初期化の前に呼び出すのが望ましい
+  await AppTrackingTransparency.requestTrackingAuthorization();
+
   MobileAds.instance.initialize();
   
   // アプリ起動時にHome用の広告を先行読み込み
