@@ -127,9 +127,9 @@
             "imagePath": null
         },
         {
-            "question": "副作用情報の収集において、登録販売者が副作用を知った場合は、国（厚生労働大臣）に報告する義務がある。",
+            "question": "登録販売者が副作用を知った場合の報告義務の提出先は、厚生労働大臣である。",
             "isCorrect": true,
-            "explanation": "正解！「医薬品・医療機器等安全性情報報告制度」により、登録販売者にも報告義務があります。",
+            "explanation": "正解！法的な報告先は「厚生労働大臣」です（実務上の窓口としてPMDAを経由します）。",
             "imagePath": null
         },
         {
@@ -178,6 +178,126 @@
             "question": "登録販売者は、一般用医薬品の第2類および第3類を販売することができる。",
             "isCorrect": true,
             "explanation": "正解！第1類（リスクが高い薬）は薬剤師しか販売できませんが、第2類・第3類は登録販売者が扱えます。",
+            "imagePath": null
+        },
+        {
+            "question": "医薬品は、人の疾病の診断、治療、予防に使用されることが目的とされている。",
+            "isCorrect": true,
+            "explanation": "正解！医薬品医療機器等法（薬機法）における医薬品の定義です。",
+            "imagePath": null
+        },
+        {
+            "question": "一般用医薬品は、医療用医薬品と比較して、効き目が激しく副作用のリスクが高い。",
+            "isCorrect": false,
+            "explanation": "不正解！一般用医薬品は、安全性やリスクの低さが考慮されており、比較的穏やかな作用のものが多いです。",
+            "imagePath": null
+        },
+        {
+            "question": "医薬品の副作用は、使用を中断すればすぐに消失するため、特に医師への相談は不要である。",
+            "isCorrect": false,
+            "explanation": "不正解！中断しても症状が残る場合や、重篤化する場合があるため、早めに専門家に相談する必要があります。",
+            "imagePath": null
+        },
+        {
+            "question": "健康の保持増進には、医薬品の服用が最も重要であり、食事や運動は二の次である。",
+            "isCorrect": false,
+            "explanation": "不正解！適切な食事、運動、休養が健康の基本です。医薬品はあくまで補助的な役割です。",
+            "imagePath": null
+        },
+        {
+            "question": "「プラセボ効果」は、主観的な症状（痛みや不眠など）には現れにくい。",
+            "isCorrect": false,
+            "explanation": "不正解！痛みや気分などの主観的な症状ほど、プラセボ効果が現れやすいと言われています。",
+            "imagePath": null
+        },
+        {
+            "question": "医薬品と食品（牛乳やグレープフルーツジュースなど）の飲み合わせによって、副作用が増強されることがある。",
+            "isCorrect": true,
+            "explanation": "正解！例えばカルシウム拮抗薬とグレープフルーツジュースの組み合わせなどが有名です。",
+            "imagePath": null
+        },
+        {
+            "question": "小児に対する医薬品の使用において、年齢区分「幼児」とは、1歳以上7歳未満を指す。",
+            "isCorrect": true,
+            "explanation": "正解！ちなみに乳児は1歳未満、小児は7歳以上15歳未満です。",
+            "imagePath": null
+        },
+        {
+            "question": "高齢者は、持病（基礎疾患）を持っていることが多いため、一般用医薬品の使用には注意が必要である。",
+            "isCorrect": true,
+            "explanation": "正解！飲み合わせや、持病の悪化リスクを考慮する必要があります。",
+            "imagePath": null
+        },
+        {
+            "question": "妊婦が医薬品を使用しても、胎盤には血液脳関門のようなバリア機能があるため、胎児に成分が移行することはない。",
+            "isCorrect": false,
+            "explanation": "不正解！胎盤のバリア機能は不完全で、多くの医薬品成分が胎児に移行してしまいます。",
+            "imagePath": null
+        },
+        {
+            "question": "医療機関で治療を受けている人は、一般用医薬品を使用する際、医師や薬剤師に相談するべきである。",
+            "isCorrect": true,
+            "explanation": "正解！処方薬との重複や相互作用を防ぐためです。",
+            "imagePath": null
+        },
+        {
+            "question": "C型肝炎訴訟は、出産時の大量出血などに使用されたフィブリノゲン製剤による感染被害が原因である。",
+            "isCorrect": true,
+            "explanation": "正解！血液製剤によるウイルス感染が問題となりました。",
+            "imagePath": null
+        },
+        {
+            "question": "薬害エイズ事件を教訓として、医薬品の副作用情報の収集体制が見直された。",
+            "isCorrect": true,
+            "explanation": "正解！迅速な情報伝達や救済制度の整備が進められました。",
+            "imagePath": null
+        },
+        {
+            "question": "サリドマイドは、現在でも「多発性骨髄腫」などの治療薬として厳格な管理下で使用されている。",
+            "isCorrect": true,
+            "explanation": "正解！サリドマイド製剤の催奇形性を管理する「TERMS」という手順を守って使用されています。",
+            "imagePath": null
+        },
+        {
+            "question": "登録販売者は、購入者が医薬品を適正に使用できるよう、情報提供や相談応需を行う役割がある。",
+            "isCorrect": true,
+            "explanation": "正解！単に売るだけでなく、安全な使用をサポートする専門家です。",
+            "imagePath": null
+        },
+        {
+            "question": "セルフメディケーション税制は、特定のOTC医薬品を購入した際に、所得控除が受けられる制度である。",
+            "isCorrect": true,
+            "explanation": "正解！健康診断を受けていることなどが条件となります。",
+            "imagePath": null
+        },
+        {
+            "question": "医薬品の販売時、購入者の症状が重篤である場合でも、まずは一般用医薬品を勧めるのが基本である。",
+            "isCorrect": false,
+            "explanation": "不正解！重篤な場合は「受診勧奨（病院へ行くよう促す）」を行うのが登録販売者の役割です。",
+            "imagePath": null
+        },
+        {
+            "question": "一般用医薬品の販売において、購入者の利便性が最優先されるべきである。",
+            "isCorrect": false,
+            "explanation": "不正解！最優先されるべきは『保健衛生上の安全確保』です。利便性追求のために安全をおろそかにしてはいけません。",
+            "imagePath": null
+        },
+        {
+            "question": "アレルギー体質の人は、一度もアレルギー反応が出たことがない医薬品であれば、今後も絶対に安心である。",
+            "isCorrect": false,
+            "explanation": "不正解！体調の変化や感作の成立により、突然アレルギー反応が出ることがあります。",
+            "imagePath": null
+        },
+        {
+            "question": "医薬品の「有効性」と「安全性」は、トレードオフ（一方が高ければ他方が低い）の関係にあることが多い。",
+            "isCorrect": true,
+            "explanation": "正解！効果が強い薬は、副作用のリスクも高くなる傾向があります。",
+            "imagePath": null
+        },
+        {
+            "question": "サプリメントなどの「いわゆる健康食品」で健康被害が起きた事例は報告されていない。",
+            "isCorrect": false,
+            "explanation": "不正解！健康食品による肝障害などの被害報告は多数あります。",
             "imagePath": null
         }
     ],
@@ -361,6 +481,126 @@
             "isCorrect": false,
             "explanation": "逆です！上部が「心房」、下部が「心室」です（部屋の下に室があるイメージ）。",
             "imagePath": null
+        },
+        {
+            "question": "小腸の内壁には「絨毛（じゅうもう）」という突起があり、表面積を広げて吸収効率を高めている。",
+            "isCorrect": true,
+            "explanation": "正解！広げるとテニスコート一面分もの広さになると言われます。",
+            "imagePath": null
+        },
+        {
+            "question": "胆のうは、胆汁を濃縮して蓄える袋状の臓器で、消化時には収縮して胆汁を送り出す。",
+            "isCorrect": true,
+            "explanation": "正解！脂っこい食事をすると収縮して胆汁を出します。",
+            "imagePath": null
+        },
+        {
+            "question": "肝臓は、アルコールや薬物などの有害物質を無毒化する「代謝（解毒）」機能を持つ。",
+            "isCorrect": true,
+            "explanation": "正解！肝臓の最も重要な働きの一つです。",
+            "imagePath": null
+        },
+        {
+            "question": "肺胞は、酸素と二酸化炭素のガス交換を行う場所である。",
+            "isCorrect": true,
+            "explanation": "正解！ブドウの房のような形をしており、毛細血管に囲まれています。",
+            "imagePath": null
+        },
+        {
+            "question": "血小板は、血管が傷ついたときに集まり、血液を固めて止血する働きがある。",
+            "isCorrect": true,
+            "explanation": "正解！傷口を塞ぐ役割です。少なすぎると血が止まりにくくなります。",
+            "imagePath": null
+        },
+        {
+            "question": "心臓の拍動（心拍）は、自律神経によって調整されており、意識的に速くしたり遅くしたりできる。",
+            "isCorrect": false,
+            "explanation": "不正解！心拍は自律神経支配なので、自分の意思ではコントロールできません。",
+            "imagePath": null
+        },
+        {
+            "question": "腎臓でろ過された原尿の成分のうち、ブドウ糖やアミノ酸の大部分は尿細管で再吸収される。",
+            "isCorrect": true,
+            "explanation": "正解！体に必要な栄養分は捨てずに回収されます。",
+            "imagePath": null
+        },
+        {
+            "question": "副腎髄質から分泌されるアドレナリンは、血糖値を上昇させる働きがある。",
+            "isCorrect": true,
+            "explanation": "正解！緊急時にエネルギー（糖分）を供給するためです。",
+            "imagePath": null
+        },
+        {
+            "question": "水晶体は、カメラの「フィルム」にあたる部分で、光を感じ取る。",
+            "isCorrect": false,
+            "explanation": "不正解！水晶体は「レンズ」です。フィルム（光を感じる部分）は「網膜」です。",
+            "imagePath": null
+        },
+        {
+            "question": "中耳にある耳小骨は、鼓膜の振動を増幅して内耳に伝える。",
+            "isCorrect": true,
+            "explanation": "正解！テコの原理で音を大きくして伝えます。",
+            "imagePath": null
+        },
+        {
+            "question": "皮膚は、体温調節や知覚（触覚・痛覚など）の機能も持っている。",
+            "isCorrect": true,
+            "explanation": "正解！汗をかいて熱を逃がしたり、外部の刺激を感じ取ったりします。",
+            "imagePath": null
+        },
+        {
+            "question": "骨格筋は、運動神経によって支配されている随意筋である。",
+            "isCorrect": true,
+            "explanation": "正解！手足を動かす筋肉は、自分の意思で動かせます。",
+            "imagePath": null
+        },
+        {
+            "question": "脳幹（延髄など）は、呼吸や心拍などの生命維持に不可欠な機能を制御している。",
+            "isCorrect": true,
+            "explanation": "正解！「生命の座」とも呼ばれる重要な部分です。",
+            "imagePath": null
+        },
+        {
+            "question": "医薬品の成分が皮膚から吸収されることはない。",
+            "isCorrect": false,
+            "explanation": "不正解！貼り薬や塗り薬の成分は、皮膚（経皮）から吸収されて全身に回ることがあります。",
+            "imagePath": null
+        },
+        {
+            "question": "坐剤（座薬）は、直腸から吸収されるため、肝臓での初回通過効果を受けにくい。",
+            "isCorrect": true,
+            "explanation": "正解！肝臓を通らずに全身循環に入るため、効果が早く現れます。",
+            "imagePath": null
+        },
+        {
+            "question": "医薬品の成分は、血液中のタンパク質（アルブミンなど）と結合して運ばれることが多い。",
+            "isCorrect": true,
+            "explanation": "正解！結合している薬は活性がなく、遊離した薬だけが効き目を示します。",
+            "imagePath": null
+        },
+        {
+            "question": "高齢者は、細胞内の水分量が減少しているため、脱水症状になりやすい。",
+            "isCorrect": true,
+            "explanation": "正解！喉の渇きも感じにくくなっているため注意が必要です。",
+            "imagePath": null
+        },
+        {
+            "question": "医薬品の代謝物が、未変化体（元の成分）よりも強い作用を持つことがある。",
+            "isCorrect": true,
+            "explanation": "正解！「活性代謝物」と呼ばれます。逆に代謝されて効き目がなくなる場合もあります。",
+            "imagePath": null
+        },
+        {
+            "question": "ショック（アナフィラキシー）は、発症から進行が非常に早いため、直ちに救急処置が必要である。",
+            "isCorrect": true,
+            "explanation": "正解！血圧低下や呼吸困難が急激に起こります。",
+            "imagePath": null
+        },
+        {
+            "question": "スティーブンス・ジョンソン症候群は、眼の充血や唇のただれなどの前兆が現れることが多い。",
+            "isCorrect": true,
+            "explanation": "正解！風邪のような症状に続いて、粘膜の変化が現れます。",
+            "imagePath": null
         }
     ],
     "part3": [
@@ -473,9 +713,9 @@
             "imagePath": null
         },
         {
-            "question": "鉄製剤（貧血の薬）を服用する前後30分は、タンニンを含むお茶（緑茶・紅茶）を飲んではならない。",
-            "isCorrect": false,
-            "explanation": "現在は「気にしなくてよい」とされています。かつては鉄の吸収を妨げると言われていましたが、最近の手引きでは制限がなくなりました。",
+            "question": "鉄製剤（貧血の薬）を服用する際、お茶（タンニン酸を含む）での服用は避けるべきである。",
+            "isCorrect": true,
+            "explanation": "正解！タンニン酸と鉄が反応して吸収が悪くなることがあるため、水か白湯で服用するのが基本です。",
             "imagePath": null
         },
         {
@@ -542,6 +782,126 @@
             "question": "高コレステロール改善薬の成分には、大豆油不けん化物（ソイステロール）などが用いられる。",
             "isCorrect": true,
             "explanation": "正解！腸管でのコレステロール吸収を抑える働きがあります。",
+            "imagePath": null
+        },
+        {
+            "question": "ブロムヘキシン塩酸塩は、気道粘液の分泌を促し、痰をサラサラにして出しやすくする去痰成分である。",
+            "isCorrect": true,
+            "explanation": "正解！分泌促進作用や溶解作用で痰を出しやすくします。",
+            "imagePath": null
+        },
+        {
+            "question": "カンゾウ（甘草）を含む医薬品を長期間服用しても、副作用の心配はない。",
+            "isCorrect": false,
+            "explanation": "不正解！主成分のグリチルリチン酸により、偽アルドステロン症やミオパチーを起こすリスクがあります。",
+            "imagePath": null
+        },
+        {
+            "question": "ジヒドロコデインリン酸塩は、コデインリン酸塩よりも鎮咳作用が弱い。",
+            "isCorrect": false,
+            "explanation": "不正解！ジヒドロコデインの方が強力な作用を持つとされています。",
+            "imagePath": null
+        },
+        {
+            "question": "マオウ（麻黄）は、気管支拡張作用があるが、交感神経刺激作用もあるため、高血圧の人は注意が必要である。",
+            "isCorrect": true,
+            "explanation": "正解！エフェドリン類を含んでいるためです。",
+            "imagePath": null
+        },
+        {
+            "question": "酸化マグネシウムは、腸内の水分を集めて便を柔らかくする「塩類下剤」である。",
+            "isCorrect": true,
+            "explanation": "正解！刺激性下剤よりもお腹が痛くなりにくいのが特徴です。",
+            "imagePath": null
+        },
+        {
+            "question": "ヒマシ油は、小腸で分解されて強い瀉下作用を示すため、3歳未満の乳幼児には使用してはならない。",
+            "isCorrect": true,
+            "explanation": "正解！作用が激しいため、防虫剤や殺鼠剤を誤飲した際の下剤としても使われません（油に溶ける毒物は吸収を早めるため）。",
+            "imagePath": null
+        },
+        {
+            "question": "ロートエキスは、胃酸分泌抑制作用や鎮痛鎮痙作用を持つが、母乳が出にくくなることがある。",
+            "isCorrect": true,
+            "explanation": "正解！成分が母乳に移行して乳児の脈が速くなるリスクもあります。",
+            "imagePath": null
+        },
+        {
+            "question": "スクラルファートは、荒れた胃粘膜を保護・修復する成分である。",
+            "isCorrect": true,
+            "explanation": "正解！アルミニウムを含むため、透析を受けている人は使用できません。",
+            "imagePath": null
+        },
+        {
+            "question": "整腸薬に含まれるビフィズス菌は、腸内環境を整える働きがある。",
+            "isCorrect": true,
+            "explanation": "正解！悪玉菌の増殖を抑えます。",
+            "imagePath": null
+        },
+        {
+            "question": "強心薬（センソなど）は、心筋に直接働いて収縮力を高めるが、治療域が狭く中毒を起こしやすい。",
+            "isCorrect": true,
+            "explanation": "正解！過量摂取は非常に危険です。",
+            "imagePath": null
+        },
+        {
+            "question": "ヘプロニカートは、末梢の血液循環を改善するビタミンE誘導体である。",
+            "isCorrect": true,
+            "explanation": "正解！しもやけや冷え性の改善に使われます。",
+            "imagePath": null
+        },
+        {
+            "question": "外用痔疾用薬において、リドカインは痛みやかゆみを抑える局所麻酔成分である。",
+            "isCorrect": true,
+            "explanation": "正解！感覚を麻痺させて痛みを和らげます。",
+            "imagePath": null
+        },
+        {
+            "question": "尿素は、角質層の水分保持機能を高め、皮膚を柔らかくする作用がある。",
+            "isCorrect": true,
+            "explanation": "正解！保湿剤としてハンドクリームなどによく使われます。",
+            "imagePath": null
+        },
+        {
+            "question": "ケトプロフェン（湿布薬）は、紫外線に当たると「光線過敏症」を起こすことがある。",
+            "isCorrect": true,
+            "explanation": "正解！使用後もしばらくは患部を日光に当てないよう注意が必要です。",
+            "imagePath": null
+        },
+        {
+            "question": "水虫薬（抗真菌薬）は、じゅくじゅくした患部には「液剤」が適している。",
+            "isCorrect": false,
+            "explanation": "不正解！液剤はしみて痛いので、乾燥した患部に使います。じゅくじゅくにはクリームや軟膏が適しています。",
+            "imagePath": null
+        },
+        {
+            "question": "ネオスチグミンメチル硫酸塩は、目のピント調節機能を改善する成分である。",
+            "isCorrect": true,
+            "explanation": "正解！疲れ目の目薬に入っています。",
+            "imagePath": null
+        },
+        {
+            "question": "クロルヘキシジングルコン酸塩は、一般細菌や真菌には効果があるが、結核菌やウイルスには効果が低い。",
+            "isCorrect": true,
+            "explanation": "正解！手指の消毒などに使われます。",
+            "imagePath": null
+        },
+        {
+            "question": "ジクロルボスは、有機リン系の殺虫成分であり、アセチルコリンエステラーゼを阻害して殺虫作用を示す。",
+            "isCorrect": true,
+            "explanation": "正解！劇薬に指定されている製品もあります。",
+            "imagePath": null
+        },
+        {
+            "question": "禁煙補助剤（ニコチンパッチ・ガム）を使用している間は、喫煙しても構わない。",
+            "isCorrect": false,
+            "explanation": "不正解！体内のニコチン濃度が高くなりすぎ、副作用（めまい、吐き気など）が出るため禁煙必須です。",
+            "imagePath": null
+        },
+        {
+            "question": "漢方薬は、副作用が全くない安全な薬である。",
+            "isCorrect": false,
+            "explanation": "不正解！間質性肺炎や肝機能障害などの重篤な副作用が起こることがあります。",
             "imagePath": null
         }
     ],
@@ -691,9 +1051,9 @@
             "imagePath": null
         },
         {
-            "question": "毒薬や劇薬は、一般用医薬品として販売されることはない。",
-            "isCorrect": false,
-            "explanation": "不正解！ごく一部ですが、劇薬指定の一般用医薬品も存在します（例：一部の殺虫剤や発毛剤など）。毒薬はありません。",
+            "question": "毒薬は一般用医薬品として販売されないが、劇薬はごく稀に一般用医薬品として販売されることがある。",
+            "isCorrect": true,
+            "explanation": "正解！殺虫剤などごく一部の製品に限られますが、劇薬指定の一般用医薬品は存在します（毒薬はありません）。",
             "imagePath": null
         },
         {
@@ -724,6 +1084,126 @@
             "question": "薬機法の目的には、「保健衛生の向上」が含まれる。",
             "isCorrect": true,
             "explanation": "正解！医薬品等の品質、有効性、安全性を確保し、保健衛生の向上を図るのが目的です。",
+            "imagePath": null
+        },
+        {
+            "question": "医薬品の製造販売業許可を持っていれば、自社で製造した医薬品を一般消費者に直接販売できる。",
+            "isCorrect": false,
+            "explanation": "不正解！「製造販売業」は出荷判定をする許可であり、直接消費者に売るには「薬局」や「店舗販売業」の許可が必要です。",
+            "imagePath": null
+        },
+        {
+            "question": "薬局において、薬剤師が不在の場合でも、登録販売者がいれば調剤室で調剤を行うことができる。",
+            "isCorrect": false,
+            "explanation": "絶対ダメ！調剤は薬剤師の独占業務です。登録販売者は調剤できません。",
+            "imagePath": null
+        },
+        {
+            "question": "一般用医薬品の分割販売（量り売り）をする際、分割した容器にも法定記載事項（成分名や用法用量など）を記載しなければならない。",
+            "isCorrect": true,
+            "explanation": "正解！元の箱だけでなく、小分けした容器にも重要情報の記載が義務付けられています。",
+            "imagePath": null
+        },
+        {
+            "question": "配置販売業の許可は、配置しようとする区域（都道府県）ごとの知事から受ける必要がある。",
+            "isCorrect": true,
+            "explanation": "正解！全国共通ではなく、都道府県ごとの許可が必要です。",
+            "imagePath": null
+        },
+        {
+            "question": "登録販売者の試験に合格していない者でも、薬剤師の監督下であれば、医薬品の販売や相談対応ができる。",
+            "isCorrect": false,
+            "explanation": "不正解！資格のない一般従事者は、品出しなどはできますが、販売・相談業務はできません。",
+            "imagePath": null
+        },
+        {
+            "question": "店舗管理者は、その店舗にある医薬品の品質管理や、従業員の監督を行う義務がある。",
+            "isCorrect": true,
+            "explanation": "正解！店長としての責任です。",
+            "imagePath": null
+        },
+        {
+            "question": "要指導医薬品は、一定期間販売され、安全性が確認されれば一般用医薬品（第1類など）に移行する。",
+            "isCorrect": true,
+            "explanation": "正解！いわゆる「スイッチ直後品目」などが該当します。",
+            "imagePath": null
+        },
+        {
+            "question": "第1類医薬品を販売する際は、書面（またはタブレット端末等）を用いて情報提供を行わなければならない。",
+            "isCorrect": true,
+            "explanation": "正解！口頭のみの説明は認められていません。書面またはタブレット等の画面を用いて説明する必要があります。",
+            "imagePath": null
+        },
+        {
+            "question": "登録販売者が研修中（実務経験不足）の場合、名札に「研修中」である旨を記載する必要がある。",
+            "isCorrect": true,
+            "explanation": "正解！購入者が分かるように区別する必要があります。",
+            "imagePath": null
+        },
+        {
+            "question": "医薬品を陳列する際、医薬品と医薬部外品・食品は区別して陳列しなければならない。",
+            "isCorrect": true,
+            "explanation": "正解！客が医薬品と誤認しないように分ける必要があります。",
+            "imagePath": null
+        },
+        {
+            "question": "使用期限を過ぎた医薬品は、割引価格であれば販売してもよい。",
+            "isCorrect": false,
+            "explanation": "不正解！使用期限切れの医薬品は、いかなる場合も販売・授与してはいけません。",
+            "imagePath": null
+        },
+        {
+            "question": "店舗販売業では、薬剤師がいても医療用医薬品を販売することはできない（処方箋なしの零売を除く）。",
+            "isCorrect": true,
+            "explanation": "正解！原則として店舗販売業は一般用医薬品を売る業態です。医療用医薬品は薬局で扱います。",
+            "imagePath": null
+        },
+        {
+            "question": "指定第2類医薬品の陳列棚には、「指定第2類医薬品」と表示する必要がある。",
+            "isCorrect": true,
+            "explanation": "正解！第2類の中でも特に注意が必要なものとして表示します。",
+            "imagePath": null
+        },
+        {
+            "question": "医薬品の広告において、医師や著名人が推薦している旨（「〇〇医師も推薦！」など）を広告することは認められている。",
+            "isCorrect": false,
+            "explanation": "不正解！医薬品等の効能効果について、世人の認識に誤解を与える恐れがあるため禁止されています。",
+            "imagePath": null
+        },
+        {
+            "question": "行政庁（保健所など）の監視員は、薬局や店舗に立ち入り検査を行う権限を持っている。",
+            "isCorrect": true,
+            "explanation": "正解！拒否したり虚偽の報告をすると罰せられます。",
+            "imagePath": null
+        },
+        {
+            "question": "登録販売者が業務停止命令を受けた場合、その期間中はドラッグストアのレジ打ち業務も行ってはならない。",
+            "isCorrect": false,
+            "explanation": "不正解！「登録販売者としての業務」が停止されるのであって、資格を要しない一般業務（雑貨のレジなど）は可能です。",
+            "imagePath": null
+        },
+        {
+            "question": "濫用のおそれのある医薬品を若年者に販売する場合、氏名や年齢を確認しなければならない。",
+            "isCorrect": true,
+            "explanation": "正解！高校生などがオーバードーズ目的で買うのを防ぐためです。",
+            "imagePath": null
+        },
+        {
+            "question": "薬機法において、「中枢神経系の興奮」を目的とする医薬品の広告は特に厳しく規制されている。",
+            "isCorrect": true,
+            "explanation": "正解！がんの治療薬などの広告制限とともに、適正使用を害する恐れがあるためです。",
+            "imagePath": null
+        },
+        {
+            "question": "販売従事登録証を紛失した場合、直ちに登録販売者の資格を失う。",
+            "isCorrect": false,
+            "explanation": "不正解！再交付申請ができます。資格自体はなくなりません。",
+            "imagePath": null
+        },
+        {
+            "question": "店舗販売業の店舗において、薬剤師や登録販売者が不在となる時間帯は、医薬品売り場を閉鎖しなければならない。",
+            "isCorrect": true,
+            "explanation": "正解！専門家不在時に客が医薬品を手に取れないよう、シャッターやカーテン等で物理的に遮断（閉鎖）する必要があります。",
             "imagePath": null
         }
     ],
@@ -771,15 +1251,15 @@
             "imagePath": null
         },
         {
-            "question": "副作用被害救済制度の給付請求は、医薬品医療機器総合機構（PMDA）に対して行う。",
+            "question": "副作用被害救済制度の給付請求の窓口は、医薬品医療機器総合機構（PMDA）である。",
             "isCorrect": true,
-            "explanation": "正解！製薬会社や国ではなく、PMDAが窓口です。",
+            "explanation": "正解！報告義務の提出先は「国（大臣）」ですが、救済給付の請求窓口は「PMDA」です。",
             "imagePath": null
         },
         {
             "question": "登録販売者は、購入者から副作用の報告を受けた場合、必要に応じて報告書を国（厚生労働大臣）に提出する義務がある。",
             "isCorrect": true,
-            "explanation": "正解！「医薬品・医療機器等安全性情報報告制度」に基づき、専門家として報告を行います。",
+            "explanation": "正解！「医薬品・医療機器等安全性情報報告制度」に基づき、専門家として国（大臣）に報告義務があります。",
             "imagePath": null
         },
         {
@@ -906,6 +1386,126 @@
             "question": "ロペラミド塩酸塩（下痢止め）は、15歳未満の小児にも使用できる。",
             "isCorrect": false,
             "explanation": "不正解！中枢神経系への副作用が強いため、15歳未満は使用禁止（してはいけないこと）です。",
+            "imagePath": null
+        },
+        {
+            "question": "添付文書の「使用上の注意」は、文字の大きさや色使いなどの記載方法に細かいルールがある。",
+            "isCorrect": true,
+            "explanation": "正解！赤枠や赤字を使う場合などが決められています。",
+            "imagePath": null
+        },
+        {
+            "question": "「ショック（アナフィラキシー）」は、服用後すぐに（数分〜数十分以内）現れることが多い。",
+            "isCorrect": true,
+            "explanation": "正解！即時型アレルギー反応です。",
+            "imagePath": null
+        },
+        {
+            "question": "皮膚粘膜眼症候群（SJS）と中毒性表皮壊死融解症（TEN）は、関連性が薄い全く別の病気である。",
+            "isCorrect": false,
+            "explanation": "不正解！SJSが重症化したものがTENと考えられており、病態は連続しています。",
+            "imagePath": null
+        },
+        {
+            "question": "「肝機能障害」の初期症状として、白目が黄色くなる（黄疸）、褐色尿、全身倦怠感などがある。",
+            "isCorrect": true,
+            "explanation": "正解！風邪と間違えやすいですが、黄疸や尿の色がサインです。",
+            "imagePath": null
+        },
+        {
+            "question": "間質性肺炎は、細菌感染による通常の肺炎と同じ治療薬で治る。",
+            "isCorrect": false,
+            "explanation": "不正解！肺の壁（間質）が炎症を起こすもので、細菌性肺炎とは治療法が異なります。原因薬の中止やステロイド治療が必要です。",
+            "imagePath": null
+        },
+        {
+            "question": "「偽アルドステロン症」は、体内にカリウムが貯留し、ナトリウムが排泄されることで起こる。",
+            "isCorrect": false,
+            "explanation": "逆です！ナトリウムが貯留（むくみ、高血圧）し、カリウムが失われる（低カリウム血症）状態です。",
+            "imagePath": null
+        },
+        {
+            "question": "無菌性髄膜炎は、イブプロフェンなどの解熱鎮痛薬の副作用として報告されている。",
+            "isCorrect": true,
+            "explanation": "正解！首筋のつっぱり、激しい頭痛などが症状です。全身性エリテマトーデスの人はリスクが高いです。",
+            "imagePath": null
+        },
+        {
+            "question": "医薬品の副作用で死亡した場合、遺族に対して「葬祭料」が給付される制度がある。",
+            "isCorrect": true,
+            "explanation": "正解！遺族年金または遺族一時金に加え、葬祭料も給付されます。",
+            "imagePath": null
+        },
+        {
+            "question": "救済制度の給付決定において、医学的薬学的判断を行うのは厚生労働大臣（薬事・食品衛生審議会）である。",
+            "isCorrect": true,
+            "explanation": "正解！PMDAが受付・調査を行い、大臣が判定します。",
+            "imagePath": null
+        },
+        {
+            "question": "抗がん剤や免疫抑制剤による副作用は、医薬品副作用被害救済制度の対象外となる場合がある。",
+            "isCorrect": true,
+            "explanation": "正解！副作用が必発とされ、救済の対象から除外されている医薬品があります。",
+            "imagePath": null
+        },
+        {
+            "question": "添付文書の改訂情報は、PMDAのホームページで確認することができる。",
+            "isCorrect": true,
+            "explanation": "正解！常に最新の情報を確認することが重要です。",
+            "imagePath": null
+        },
+        {
+            "question": "製薬企業には「医薬情報担当者（MR）」がおり、医療機関などに医薬品情報の提供・収集を行っている。",
+            "isCorrect": true,
+            "explanation": "正解！",
+            "imagePath": null
+        },
+        {
+            "question": "製品の「使用期限」は、開封した後であればいつまで使っても良い。",
+            "isCorrect": false,
+            "explanation": "不正解！開封後は雑菌混入や酸化のリスクがあるため、使用期限に関わらず早めに（目薬なら1ヶ月程度など）使い切るべきです。",
+            "imagePath": null
+        },
+        {
+            "question": "医薬品の副作用報告は、因果関係が明確でない場合は報告しなくてよい。",
+            "isCorrect": false,
+            "explanation": "不正解！「疑われる」段階で報告する義務があります。因果関係の究明は専門機関が行います。",
+            "imagePath": null
+        },
+        {
+            "question": "喘息の副作用（アスピリン喘息）は、内服薬だけでなく、坐薬や貼り薬でも誘発されることがある。",
+            "isCorrect": true,
+            "explanation": "正解！成分が吸収されれば起こり得ます。",
+            "imagePath": null
+        },
+        {
+            "question": "接触皮膚炎（かぶれ）は、光線過敏症とは異なり、光が当たらなくても発症する。",
+            "isCorrect": true,
+            "explanation": "正解！薬が触れた部分に一致して発疹やかゆみが出ます。",
+            "imagePath": null
+        },
+        {
+            "question": "消化性潰瘍（胃潰瘍など）は、NSAIDs（非ステロイド性抗炎症薬）の長期服用によって引き起こされることがある。",
+            "isCorrect": true,
+            "explanation": "正解！胃の保護成分（プロスタグランジン）を減らしてしまうためです。",
+            "imagePath": null
+        },
+        {
+            "question": "眼圧上昇（緑内障の悪化）は、抗ヒスタミン薬や抗コリン薬の副作用として起こることがある。",
+            "isCorrect": true,
+            "explanation": "正解！散瞳作用により眼圧が上がるため、緑内障の人は注意が必要です。",
+            "imagePath": null
+        },
+        {
+            "question": "横紋筋融解症は、筋肉痛、脱力感、赤褐色の尿などの症状が現れる。",
+            "isCorrect": true,
+            "explanation": "正解！筋肉細胞が壊れて成分が血液中に溶け出す重篤な副作用です。",
+            "imagePath": null
+        },
+        {
+            "question": "安全管理責任者は、医薬品の安全確保業務を統括する役割を担う。",
+            "isCorrect": true,
+            "explanation": "正解！製造販売業の三役（総括、品質保証、安全管理）の一つです。",
             "imagePath": null
         }
     ]
