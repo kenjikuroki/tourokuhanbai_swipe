@@ -340,6 +340,18 @@ class _HomePageState extends State<HomePage> {
     }
 
     return Scaffold(
+      appBar: AppBar(
+        title: Text(
+          '登録販売者試験対策',
+          style: GoogleFonts.notoSerifJp(
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+          ),
+        ),
+        backgroundColor: Colors.teal,
+        centerTitle: true,
+        iconTheme: const IconThemeData(color: Colors.white),
+      ),
       body: Container(
         color: Colors.teal[50],
         child: Column(
@@ -350,21 +362,6 @@ class _HomePageState extends State<HomePage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: <Widget>[
-                    const SizedBox(height: 40),
-                    // Header Area
-                    // Header Area
-                    // Header Area
-                    Text(
-                      '登販対策',
-                      textAlign: TextAlign.center,
-                      style: GoogleFonts.zenMaruGothic(
-                        fontSize: 48,
-                        fontWeight: FontWeight.w900,
-                        color: Colors.orangeAccent,
-                        letterSpacing: 4.0,
-                      ),
-                    ),
-                    const SizedBox(height: 40),
                     
                     // Chapter Cards
                     _ChapterCard(
@@ -569,7 +566,7 @@ class _QuizPageState extends State<QuizPage> {
   final List<Map<String, dynamic>> _answerHistory = [];
 
   // 背景色のアニメーション用
-  Color _backgroundColor = const Color(0xFFF9F9F9);
+  Color _backgroundColor = Colors.teal[50]!;
 
   void _handleSwipeEnd(int previousIndex, int targetIndex, SwiperActivity activity) {
     if (activity is Swipe) {
@@ -603,7 +600,7 @@ class _QuizPageState extends State<QuizPage> {
       Future.delayed(const Duration(milliseconds: 200), () {
         if (mounted) {
           setState(() {
-            _backgroundColor = const Color(0xFFF9F9F9);
+            _backgroundColor = Colors.teal[50]!;
           });
         }
       });
@@ -872,7 +869,7 @@ class _QuizPageState extends State<QuizPage> {
               ),
             )
           else 
-            const Spacer(flex: 2),
+            // const Spacer(flex: 2), // ユーザー要望により上に寄せるため削除
 
           Expanded(
             flex: 5,
@@ -882,11 +879,13 @@ class _QuizPageState extends State<QuizPage> {
                 builder: (context, constraints) {
                   return FittedBox(
                     fit: BoxFit.scaleDown,
+                    alignment: Alignment.topLeft, // 左上に寄せる
                     child: SizedBox(
-                      width: constraints.maxWidth,
+                       width: constraints.maxWidth,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         mainAxisSize: MainAxisSize.min,
+                        crossAxisAlignment: CrossAxisAlignment.stretch, // 横幅いっぱいに広げる
                         children: [
                            if (!hasImage)
                             const Text(
@@ -896,6 +895,7 @@ class _QuizPageState extends State<QuizPage> {
                                 fontWeight: FontWeight.bold,
                                 color: Colors.blueGrey,
                               ),
+                              textAlign: TextAlign.center, // Q.は中央寄せ
                             ),
                           if (!hasImage) const SizedBox(height: 20),
 
@@ -907,7 +907,7 @@ class _QuizPageState extends State<QuizPage> {
                               height: 1.3,
                               color: Colors.black87,
                             ),
-                            textAlign: TextAlign.center,
+                            textAlign: TextAlign.left, // 問題文は左寄せ
                           ),
                         ],
                       ),
@@ -987,7 +987,7 @@ class ResultPage extends StatelessWidget {
     }
 
     return Scaffold(
-      backgroundColor: const Color(0xFFF9F9F9),
+      backgroundColor: Colors.teal[50],
       body: SafeArea(
         child: Column(
           children: [
@@ -998,6 +998,8 @@ class ResultPage extends StatelessWidget {
               child: AdBanner(adKey: 'result'),
             ),
             
+            const SizedBox(height: 20), // 広告とスコアカードの間隔を広げる
+
             // スコアカード
             Container(
               margin: const EdgeInsets.fromLTRB(16, 0, 16, 16),
@@ -1148,7 +1150,7 @@ class ResultPage extends StatelessWidget {
             // 3. 下部エリア（固定フッター）
             Container(
               padding: const EdgeInsets.fromLTRB(16, 16, 16, 8),
-              color: const Color(0xFFF9F9F9),
+              color: Colors.teal[50],
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
