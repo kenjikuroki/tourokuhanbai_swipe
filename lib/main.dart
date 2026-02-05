@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
-import 'package:shimmer/shimmer.dart';
 import 'package:appinio_swiper/appinio_swiper.dart';
 import 'package:app_tracking_transparency/app_tracking_transparency.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -10,6 +9,11 @@ import 'widgets/ad_banner.dart';
 import 'utils/ad_manager.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:in_app_review/in_app_review.dart';
+import 'package:auto_size_text/auto_size_text.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'utils/purchase_manager.dart';
+import 'widgets/premium_upgrade_card.dart';
+import 'widgets/special_offer_dialog.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -18,6 +22,9 @@ Future<void> main() async {
   await SystemChrome.setPreferredOrientations([
     DeviceOrientation.portraitUp,
   ]);
+  
+  // プレミアム機能初期化
+  await PurchaseManager.instance.initialize();
   
   runApp(const MyApp());
 }
@@ -211,11 +218,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  int _highScore1 = 0;
-  int _highScore2 = 0;
-  int _highScore3 = 0;
-  int _highScore4 = 0;
-  int _highScore5 = 0;
   int _weaknessCount = 0;
   bool _isLoading = true; // ローディング状態
 
@@ -253,20 +255,10 @@ class _HomePageState extends State<HomePage> {
   }
   
   Future<void> _loadUserData() async {
-    final s1 = await PrefsHelper.getHighScore('highscore_part1');
-    final s2 = await PrefsHelper.getHighScore('highscore_part2');
-    final s3 = await PrefsHelper.getHighScore('highscore_part3');
-    final s4 = await PrefsHelper.getHighScore('highscore_part4');
-    final s5 = await PrefsHelper.getHighScore('highscore_part5');
     final weakList = await PrefsHelper.getWeakQuestions();
 
     if (mounted) {
       setState(() {
-        _highScore1 = s1;
-        _highScore2 = s2;
-        _highScore3 = s3;
-        _highScore4 = s4;
-        _highScore5 = s5;
         _weaknessCount = weakList.length;
       });
     }
@@ -287,6 +279,7 @@ class _HomePageState extends State<HomePage> {
     
     // クイズ開始時に結果画面用の広告とインタースティシャル広告を先行読み込み
     AdManager.instance.preloadAd('result');
+    AdManager.instance.preloadAd('quiz'); // クイズ画面用
     AdManager.instance.preloadInterstitial();
     
     await Navigator.of(context).push(
@@ -314,6 +307,7 @@ class _HomePageState extends State<HomePage> {
     
     // 復習モード開始
     AdManager.instance.preloadAd('result');
+    AdManager.instance.preloadAd('quiz'); // クイズ画面用
     AdManager.instance.preloadInterstitial();
 
     await navigator.push(
@@ -327,6 +321,123 @@ class _HomePageState extends State<HomePage> {
     );
     if (!mounted) return;
     _loadUserData(); // 戻ってきたらデータ更新
+  }
+
+  Future<void> _launchSisterApp() async {
+    final bool? shouldLaunch = await showDialog<bool>(
+      context: context,
+      builder: (context) {
+        return Dialog(
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24)),
+          elevation: 0,
+          backgroundColor: Colors.transparent,
+          child: Container(
+            padding: const EdgeInsets.all(24),
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(24),
+              boxShadow: [
+                 BoxShadow(
+                  color: Colors.black.withValues(alpha: 0.1),
+                  blurRadius: 10,
+                  offset: const Offset(0, 4),
+                ),
+              ],
+            ),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                // Icon
+                Container(
+                  padding: const EdgeInsets.all(4),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(20),
+                    boxShadow: const [
+                       BoxShadow(
+                        color: Colors.black12,
+                        blurRadius: 8,
+                        spreadRadius: 2,
+                      ),
+                    ],
+                  ),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(16),
+                    child: Image.asset(
+                      'assets/sister_app_icon.jpg',
+                      width: 80,
+                      height: 80,
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 16),
+                
+                // Title
+                const Text(
+                  "姉妹アプリ\n「登販対策 選択問題」",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    height: 1.4,
+                    color: Colors.black87,
+                  ),
+                ),
+                const SizedBox(height: 16),
+                
+                // Body
+                Text(
+                  "App Storeを開いて、\n姉妹アプリのページに移動します。",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 14,
+                    color: Colors.grey[600],
+                    height: 1.5,
+                  ),
+                ),
+                const SizedBox(height: 24),
+                
+                // Buttons
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    TextButton(
+                      onPressed: () => Navigator.of(context).pop(false),
+                      style: TextButton.styleFrom(
+                        foregroundColor: Colors.grey,
+                        padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                      ),
+                      child: const Text("キャンセル", style: TextStyle(fontSize: 16)),
+                    ),
+                    ElevatedButton(
+                      onPressed: () => Navigator.of(context).pop(true),
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.deepOrange,
+                        foregroundColor: Colors.white,
+                        elevation: 0,
+                        padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 12),
+                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
+                      ),
+                      child: const Text("開く", style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+        );
+      },
+    );
+
+    if (shouldLaunch != true) return;
+
+    const url = 'https://apps.apple.com/app/id6757967698';
+    if (await canLaunchUrl(Uri.parse(url))) {
+      await launchUrl(Uri.parse(url));
+    } else {
+      debugPrint('Could not launch $url');
+    }
   }
 
   @override
@@ -427,17 +538,75 @@ class _HomePageState extends State<HomePage> {
                           ),
                         ),
                       ),
+                    
+                    const SizedBox(height: 20),
+
+                    ValueListenableBuilder<bool>(
+                      valueListenable: PurchaseManager.instance.isPremium,
+                      builder: (context, isPremium, child) {
+                        if (isPremium) return const SizedBox.shrink();
+                        return GestureDetector(
+                          onTap: _launchSisterApp,
+                          child: Container(
+                            padding: const EdgeInsets.all(12),
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(16),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey.withValues(alpha: 0.2),
+                                  blurRadius: 8,
+                                  offset: const Offset(0, 4),
+                                ),
+                              ],
+                            ),
+                            child: Row(
+                              children: [
+                                ClipRRect(
+                                  borderRadius: BorderRadius.circular(12),
+                                  child: Image.asset(
+                                    'assets/sister_app_icon.jpg',
+                                    width: 60,
+                                    height: 60,
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
+                                const SizedBox(width: 16),
+                                Expanded(
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        "選択問題アプリリリース！",
+                                        style: TextStyle(
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.bold,
+                                          color: Colors.grey[600],
+                                        ),
+                                      ),
+                                      const SizedBox(height: 4),
+                                      const Text(
+                                        "空き時間にサクサク解ける\n姉妹アプリはこちら",
+                                        style: TextStyle(
+                                          fontSize: 15,
+                                          fontWeight: FontWeight.bold,
+                                          color: Colors.black87,
+                                          height: 1.3,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                Icon(Icons.launch, color: Colors.grey[400], size: 20),
+                              ],
+                            ),
+                          ),
+                        );
+                      },
+                    ),
+                    const PremiumUpgradeCard(),
                   ],
                 ),
-              ),
-            ),
-            
-            // Ad Banner
-            const SafeArea(
-              top: false,
-              child: SizedBox(
-                height: 60,
-                child: AdBanner(adKey: 'home', keepAlive: true),
               ),
             ),
           ],
@@ -445,6 +614,7 @@ class _HomePageState extends State<HomePage> {
       ),
     );
   }
+
 
   void _startQuizByCategory(BuildContext context, String partKey) {
     List<Quiz> quizzes;
@@ -681,6 +851,8 @@ class _QuizPageState extends State<QuizPage> {
           onComplete: () {
             if (mounted) {
               _navigateToResult();
+              // オファー表示 (プレミアム未加入かつ初回)
+              SpecialOfferDialog.showIfNeeded(context);
             }
           },
         );
@@ -779,7 +951,7 @@ class _QuizPageState extends State<QuizPage> {
                 ),
               ),
               Container(
-                padding: const EdgeInsets.only(bottom: 40, top: 20),
+                padding: const EdgeInsets.only(bottom: 20, top: 20),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -818,6 +990,12 @@ class _QuizPageState extends State<QuizPage> {
                     ),
                   ],
                 ),
+              ),
+
+              // Quiz Screen Ad Banner
+              const SizedBox(
+                height: 60,
+                child: AdBanner(adKey: 'quiz'),
               ),
             ],
           ),
@@ -875,45 +1053,38 @@ class _QuizPageState extends State<QuizPage> {
             flex: 5,
             child: Padding(
               padding: const EdgeInsets.all(24.0),
-              child: LayoutBuilder(
-                builder: (context, constraints) {
-                  return FittedBox(
-                    fit: BoxFit.scaleDown,
-                    alignment: Alignment.topLeft, // 左上に寄せる
-                    child: SizedBox(
-                       width: constraints.maxWidth,
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        mainAxisSize: MainAxisSize.min,
-                        crossAxisAlignment: CrossAxisAlignment.stretch, // 横幅いっぱいに広げる
-                        children: [
-                           if (!hasImage)
-                            const Text(
-                              "Q.",
-                              style: TextStyle(
-                                fontSize: 40,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.blueGrey,
-                              ),
-                              textAlign: TextAlign.center, // Q.は中央寄せ
-                            ),
-                          if (!hasImage) const SizedBox(height: 20),
-
-                          Text(
-                            quiz.question,
-                            style: TextStyle(
-                              fontSize: hasImage ? 20 : 24,
-                              fontWeight: FontWeight.bold,
-                              height: 1.3,
-                              color: Colors.black87,
-                            ),
-                            textAlign: TextAlign.left, // 問題文は左寄せ
-                          ),
-                        ],
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start, // 上詰め
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  if (!hasImage)
+                    const Text(
+                      "Q.",
+                      style: TextStyle(
+                        fontSize: 40,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.blueGrey,
                       ),
+                      textAlign: TextAlign.center, // Q.は中央寄せ
                     ),
-                  );
-                },
+                  if (!hasImage) const SizedBox(height: 20),
+
+                  Expanded( // 高さを認識させるためにExpandedで囲む
+                    child: AutoSizeText(
+                      quiz.question,
+                      style: TextStyle(
+                        fontSize: hasImage ? 24 : 32, // 基本サイズ 32/24
+                        fontWeight: FontWeight.bold,
+                        height: 1.3,
+                        color: Colors.black87,
+                      ),
+                      textAlign: TextAlign.left, // 問題文は左寄せ
+                      minFontSize: 12,
+                      maxLines: 20, // 1行で省略されないように
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                  ),
+                ],
               ),
             ),
           ),
